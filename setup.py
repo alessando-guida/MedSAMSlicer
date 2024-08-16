@@ -4,6 +4,8 @@
 # This source code is licensed under the license found in the
 # LICENSE file in the root directory of this source tree.
 
+import os
+
 from setuptools import find_packages, setup
 from torch.utils.cpp_extension import BuildExtension, CUDAExtension
 
@@ -29,7 +31,7 @@ REQUIRED_PACKAGES = [
     "hydra-core>=1.3.2",
     "iopath>=0.1.10",
     "pillow>=9.4.0",
-    "opencv-python>=4.7.0",
+    "opencv-python==4.7.0",
     "matplotlib>=3.9.1",
     "pandas>=2.2.2",
     "SimpleITK>=2.3.1",
