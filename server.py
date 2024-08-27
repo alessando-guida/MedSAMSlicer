@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def welcome():
-    return "Welcome to the website! The server is reachable."
+    return "All good, The Slicer server is reachable."
 
 @app.route('/run_script', methods=['POST'])
 def run_script():
