@@ -1,4 +1,4 @@
-from flask import Flask, request, send_file
+from flask import Flask, request, send_file, jsonify
 import shutil
 from pathlib import Path
 import subprocess
@@ -81,5 +81,12 @@ def upload_file():
     else:
         print("No file received")
 
+
+@app.route('/testme', methods=['POST'])
+def testme():
+    print("you pressed the button ")
+    return "Button pressed!"
+
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    #app.run(host='0.0.0.0', port=8080, debug=True)
+    app.run(host='127.0.0.1', port=8080, debug=True)

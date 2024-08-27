@@ -1,10 +1,23 @@
-<form method="post" action="http://142.1.32.213:8080/run_script">
-    input: <input name="input">
-    gts: <input name="gts">
-    <input type="submit"/>
-</form>
-<hr>
-<form method="post" action="http://142.1.32.213:8080/download_file">
-    output: <input name="output">
-    <input type="submit"/>
-</form>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Form</title>
+</head>
+<body>
+    <form method="post" action="http://127.0.0.1:8080/testme">
+        <input type="submit" value="/testme">
+    </form>
+    <hr>
+    <form method="post" action="http://127.0.0.1/run_script">
+        input: <input name="input">
+        gts: <input name="gts">
+        <input type="submit" value="/run_script endpoint"/>
+    </form>
+    <hr>
+    <form method="post" action="http://127.0.0.1/download_file">
+        output: <input name="output">
+        <input type="submit" value="/download_file endpoint"/>
+    </form>
+</body>
+</html>
+
